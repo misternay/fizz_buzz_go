@@ -4,6 +4,6 @@ func main() {
 
 }
 
-func Fizzbuzz(s string) {
-
+func Fizzbuzz(input int) string {
+	return "1"
 }

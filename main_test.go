@@ -7,7 +7,7 @@ func TestFizzbuzz(t *testing.T) {
 		result := Fizzbuzz(1)
 		expected := "1"
 		if result != expected {
-			t.Errorf("Input 1 should be return 1", result, expected)
+			t.Errorf("Input 1 should be return 1 but result %s not same expect %s", result, expected)
 		}
 	})
 }
