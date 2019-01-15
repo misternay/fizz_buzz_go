@@ -52,4 +52,11 @@ func TestFizzbuzz(t *testing.T) {
 			t.Errorf("Input 7 should be return 7 but result %s not same expect %s", result, expected)
 		}
 	})
+	t.Run("Input 8 should be return 8", func(t *testing.T) {
+		result := Fizzbuzz(8)
+		expected := "8"
+		if result != expected {
+			t.Errorf("Input 8 should be return 8 but result %s not same expect %s", result, expected)
+		}
+	})
 }
