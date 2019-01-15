@@ -7,7 +7,7 @@ func main() {
 }
 
 func Fizzbuzz(input int) string {
-	if input%3 == 0 && input%5 == 0 {
+	if isFizzBuzz(input) {
 		return "FizzBuzz"
 	} else if input%3 == 0 {
 		return "Fizz"
@@ -16,4 +16,8 @@ func Fizzbuzz(input int) string {
 	} else {
 		return strconv.Itoa(input)
 	}
+}
+
+func isFizzBuzz(input int) bool {
+	return input%3 == 0 && input%5 == 0
 }
